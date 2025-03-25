@@ -23,6 +23,7 @@ const App = () => (
           <Route path="/catalog" element={<Catalog />} />
           <Route path="/subscription" element={<Subscription />} />
           <Route path="/community" element={<Community />} />
+          <Route path="/login" element={<NotFound />} /> {/* Temporary redirect to NotFound */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

@@ -147,9 +147,12 @@ const Community = () => {
                   >
                     <div className="aspect-square relative overflow-hidden">
                       <img
-                        src={`https://source.unsplash.com/random/400x400?craft&sig=${item}`}
+                        src={`https://images.unsplash.com/photo-15${592000000 + item * 10000}?craft&w=400`}
                         alt={`Community project ${item}`}
                         className="w-full h-full object-cover"
+                        onError={(e) => {
+                          e.currentTarget.src = "https://images.unsplash.com/photo-1615729947596-a598e5de0ab3?w=400";
+                        }}
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                         <span className="text-white text-sm font-medium">View Project</span>
@@ -159,9 +162,12 @@ const Community = () => {
                       <div className="flex items-center space-x-2 mb-2">
                         <div className="w-6 h-6 rounded-full overflow-hidden">
                           <img
-                            src={`https://source.unsplash.com/random/100x100?face&sig=${item}`}
+                            src={`https://randomuser.me/api/portraits/women/${item + 20}.jpg`}
                             alt="User avatar"
                             className="w-full h-full object-cover"
+                            onError={(e) => {
+                              e.currentTarget.src = "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100";
+                            }}
                           />
                         </div>
                         <span className="text-sm text-crafty-navy font-medium">@crafter{item}</span>

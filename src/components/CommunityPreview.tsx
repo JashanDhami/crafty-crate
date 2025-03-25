@@ -15,6 +15,9 @@ const CommunityPreview = () => {
                   src="https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=1740&auto=format&fit=crop" 
                   alt="CraftyCrate community members" 
                   className="w-full h-auto object-cover"
+                  onError={(e) => {
+                    e.currentTarget.src = "https://images.unsplash.com/photo-1615729947596-a598e5de0ab3?w=800";
+                  }}
                 />
               </div>
               
@@ -25,9 +28,12 @@ const CommunityPreview = () => {
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 rounded-full overflow-hidden">
                     <img 
-                      src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1522&auto=format&fit=crop" 
+                      src="https://randomuser.me/api/portraits/women/44.jpg" 
                       alt="Community member" 
                       className="w-full h-full object-cover"
+                      onError={(e) => {
+                        e.currentTarget.src = "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100";
+                      }}
                     />
                   </div>
                   <div>
