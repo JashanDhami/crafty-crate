@@ -16,9 +16,7 @@ const Index = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      {/* Add a spacer to prevent content from appearing under the navbar */}
-      <div className="h-24 md:h-32"></div> 
-      <main className="flex-grow">
+      <main className="flex-grow pt-20">
         <Hero />
         <ValueProps />
         <HobbyGrid />
