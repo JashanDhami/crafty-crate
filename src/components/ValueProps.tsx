@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Check, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const features = [
   {
@@ -57,12 +58,12 @@ const ValueProps = () => {
                 <p className="text-crafty-navy/70 mb-4">
                   Our team is here to help you find the perfect hobby match.
                 </p>
-                <a 
-                  href="#contact" 
+                <Link 
+                  to="/contact" 
                   className="inline-flex items-center text-crafty-terracotta font-medium hover:underline"
                 >
                   Contact us <ArrowRight className="ml-1 w-4 h-4" />
-                </a>
+                </Link>
               </div>
               <div className="hidden md:block h-16 w-px bg-crafty-navy/10"></div>
               <div>

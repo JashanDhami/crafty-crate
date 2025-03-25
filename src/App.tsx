@@ -10,6 +10,7 @@ import Index from "./pages/Index";
 import Catalog from "./pages/Catalog";
 import Subscription from "./pages/Subscription";
 import Community from "./pages/Community";
+import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import Cart from "./pages/Cart";
 import NotFound from "./pages/NotFound";
@@ -29,6 +30,7 @@ const App = () => (
               <Route path="/catalog" element={<Catalog />} />
               <Route path="/subscription" element={<Subscription />} />
               <Route path="/community" element={<Community />} />
+              <Route path="/contact" element={<Contact />} />
               <Route path="/login" element={<Login />} />
               <Route path="/cart" element={<Cart />} />
               <Route path="*" element={<NotFound />} />

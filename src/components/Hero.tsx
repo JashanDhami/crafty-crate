@@ -13,11 +13,13 @@ const Hero = () => {
     
     if (heading) {
       heading.classList.add('animate-fade-in');
+      heading.style.opacity = '1'; // Ensure it stays visible
     }
     
     if (subtitle) {
       setTimeout(() => {
         subtitle.classList.add('animate-fade-in');
+        subtitle.style.opacity = '1'; // Ensure it stays visible
       }, 200);
     }
   }, []);
@@ -34,19 +36,21 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h1 
             ref={headingRef}
-            className="opacity-0 text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-crafty-navy text-balance"
+            className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-crafty-navy text-balance"
+            style={{ opacity: '0' }} // Start invisible, but JS will make it visible
           >
             Discover Your Next <span className="text-shimmer">Creative Passion</span>
           </h1>
           
           <p 
             ref={subtitleRef} 
-            className="opacity-0 text-lg md:text-xl text-crafty-navy/80 max-w-2xl mx-auto text-balance"
+            className="text-lg md:text-xl text-crafty-navy/80 max-w-2xl mx-auto text-balance"
+            style={{ opacity: '0' }} // Start invisible, but JS will make it visible
           >
             Curated hobby subscription boxes delivered to your door, complete with all the supplies you need to start your creative journey.
           </p>
           
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8 opacity-0 animate-fade-in" style={{animationDelay: '400ms'}}>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8" style={{ opacity: '1' }}>
             <Link
               to="/subscription"
               className="group inline-flex items-center justify-center gap-2 text-base font-medium transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background px-8 py-4 bg-crafty-terracotta text-white hover:bg-crafty-terracotta/90 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1"
@@ -65,7 +69,7 @@ const Hero = () => {
           </div>
         </div>
         
-        <div className="relative mt-16 md:mt-24 w-full max-w-5xl mx-auto opacity-0 animate-fade-in" style={{animationDelay: '600ms'}}>
+        <div className="relative mt-16 md:mt-24 w-full max-w-5xl mx-auto" style={{ opacity: '1' }}>
           <div className="aspect-video relative overflow-hidden rounded-2xl shadow-2xl">
             <div className="absolute inset-0 bg-gradient-to-r from-crafty-sage/30 to-crafty-terracotta/30 mix-blend-overlay"></div>
             <img 

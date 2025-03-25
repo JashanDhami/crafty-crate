@@ -9,8 +9,16 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 const Index = () => {
+  // Scroll to top when the component mounts
   useEffect(() => {
     window.scrollTo(0, 0);
+    
+    // Add a class to the body to prevent any unwanted transitions
+    document.body.classList.add('loaded');
+    
+    return () => {
+      document.body.classList.remove('loaded');
+    };
   }, []);
 
   return (
