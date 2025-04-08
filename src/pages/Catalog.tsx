@@ -20,7 +20,7 @@ const hobbies = [
     id: 'calligraphy',
     title: 'Modern Calligraphy',
     category: 'art',
-    image: 'https://images.unsplash.com/photo-1604567596020-d39ebb3332c5?q=80&w=1740&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1597401989360-07ff2c24c8d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
     description: 'Learn the art of beautiful handwriting with our premium calligraphy set.',
     difficulty: 'Beginner'
   },
@@ -36,7 +36,7 @@ const hobbies = [
     id: 'woodworking',
     title: 'Beginner Woodworking',
     category: 'diy',
-    image: 'https://images.unsplash.com/photo-1567964253473-59a24525de78?q=80&w=1760&auto=format&fit=crop',
+    image: 'https://factorydirectsupplyonline.com/cdn/shop/articles/5-basic-woodworking-tools-for-beginner.png?v=1722518140',
     description: 'Craft beautiful wooden items with our beginner-friendly tools and materials.',
     difficulty: 'Intermediate'
   },
@@ -44,7 +44,7 @@ const hobbies = [
     id: 'candles',
     title: 'Artisan Candle Making',
     category: 'diy',
-    image: 'https://images.unsplash.com/photo-1608263053514-717b4e0af8cb?q=80&w=1742&auto=format&fit=crop',
+    image: 'https://m.media-amazon.com/images/I/817B1GteZwL.jpg',
     description: 'Create your own signature scents with premium waxes and essential oils.',
     difficulty: 'Beginner'
   },
@@ -60,7 +60,7 @@ const hobbies = [
     id: 'birdwatching',
     title: 'Birdwatching Essentials',
     category: 'outdoors',
-    image: 'https://images.unsplash.com/photo-1567301074247-9e8ad1d7b7f0?q=80&w=1887&auto=format&fit=crop',
+    image: 'https://images.squarespace-cdn.com/content/v1/6049f59709679f3dadbb2d5d/1687072275128-EO5BXMKW55P6J8JMEV8S/image-asset.jpeg',
     description: 'Start your birdwatching journey with high-quality binoculars and guides.',
     difficulty: 'Beginner'
   },
@@ -76,7 +76,7 @@ const hobbies = [
     id: 'pottery',
     title: 'Hand-built Pottery',
     category: 'art',
-    image: 'https://images.unsplash.com/photo-1565193566173-7a0af771b71a?q=80&w=2070&auto=format&fit=crop',
+    image: 'https://ceramike.com/wp-content/uploads/2022/08/12-Techniques-For-Hand-Building-Clay-And-Coil-Pottery.jpg',
     description: 'Create beautiful ceramic pieces with our hand-building pottery kit.',
     difficulty: 'Intermediate'
   }
